@@ -1,6 +1,6 @@
 {
   "name": "call-if-defined",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Micro-library of functions that call a given function if it is defined.",
   "authors": [
     "Brandon Sara (http://bsara.pro)"
