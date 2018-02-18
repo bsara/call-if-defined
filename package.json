@@ -1,0 +1,46 @@
+{
+  "name": "call-if-defined",
+  "version": "1.0.0",
+  "description": "Micro-library of functions that call a given function if it is defined.",
+  "authors": [
+    "Brandon Sara (http://bsara.pro)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bsara/call-if-defined#readme",
+  "repository": "bsara/call-if-defined",
+  "bugs": {
+    "url": "https://github.com/bsara/call-if-defined/issues"
+  },
+  "keywords": [
+    "call",
+    "callif",
+    "callifdefined",
+    "call-if",
+    "call-if-defined",
+    "callunless",
+    "call-unless",
+    "if",
+    "unless",
+    "condition",
+    "conditional",
+    "conditionals"
+  ],
+  "main": "index.umd.js",
+  "module": "index.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "bump": "npm --no-git-tag-version version patch",
+    "bump:major": "npm --no-git-tag-version version major",
+    "bump:minor": "npm --no-git-tag-version version minor",
+    "bump:patch": "npm --no-git-tag-version version patch",
+    "postversion": "npx update-version-comment-refs && npx push-version-comment-refs",
+    "prepublishOnly": "git push && npx tag-version",
+    "postpublish": "npm run bump"
+  },
+  "devDependencies": {
+    "npm-scripts-versioning": "^1.0.0-beta.8"
+  },
+  "dependencies": {
+    "call-if": "^1.0.2"
+  }
+}
