@@ -30,7 +30,7 @@ import { callIf, callIfOrNull } from 'call-if';
  * @return {?*} Result of calling `func` with the given `funcParams`, if `func` is
  *              defined; otherwise, returns `null`.
  */
-export function callIfDefinedOrNull(func, ...funcParams) {
+export function callIfDefinedNull(func, ...funcParams) {
   return callIfOrNull((func != null), func, ...funcParams);
 }
 

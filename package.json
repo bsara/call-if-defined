@@ -1,6 +1,6 @@
 {
   "name": "call-if-defined",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "Micro-library of functions that call a given function if it is defined.",
   "authors": [
     "Brandon Sara (http://bsara.pro)"
@@ -41,6 +41,6 @@
     "npm-scripts-versioning": "^1.0.0-beta.8"
   },
   "dependencies": {
-    "call-if": "^1.0.2"
+    "call-if": "^1.0.3"
   }
 }
