@@ -23,7 +23,7 @@
     return;
   }
   if (typeof exports === 'object') {
-    module.exports = factory(reqiure('call-if'));
+    module.exports = factory(require('call-if'));
     return;
   }
   var exported = factory(root);
@@ -41,7 +41,7 @@
    *              defined; otherwise, returns `null`.
    */
   function callIfDefinedNull(func) {
-    return callIfOrNull((func != null), func, Array.prototype.slice.call(arguments, 2));
+    return modules.callIfOrNull((func != null), func, Array.prototype.slice.call(arguments, 2));
   }
 
 
@@ -54,7 +54,7 @@
    *              defined; otherwise, returns `undefined`.
    */
   function callIfDefined(condition, func) {
-    return callIf((func != null), func, Array.prototype.slice.call(arguments, 2));
+    return modules.callIf((func != null), func, Array.prototype.slice.call(arguments, 2));
   }
 
 
